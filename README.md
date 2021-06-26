@@ -33,3 +33,17 @@ export default defineConfig({
   <%- a + b + c %>
 </div>
 ```
+
+Then you can use this.  
+
+> `some.js`
+
+```ts
+import some from './some.ejs'
+
+// result to be 
+// <div>
+//   6
+// </div>
+const result = some({ a: 1, b: 2, c: 3});
+```
